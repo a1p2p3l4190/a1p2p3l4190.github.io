@@ -1,0 +1,761 @@
+"use strict";
+(self["webpackChunktw_opening_ballot_boxes"] = self["webpackChunktw_opening_ballot_boxes"] || []).push([["main"],{
+
+/***/ 23966:
+/*!***************************************!*\
+  !*** ./src/app/app-routing.module.ts ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AppRoutingModule: () => (/* binding */ AppRoutingModule)
+/* harmony export */ });
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ 27947);
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main/main.component */ 26542);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 61699);
+
+
+
+
+const routes = [{
+  path: '',
+  component: _main_main_component__WEBPACK_IMPORTED_MODULE_0__.MainComponent
+}];
+class AppRoutingModule {
+  static #_ = this.ɵfac = function AppRoutingModule_Factory(t) {
+    return new (t || AppRoutingModule)();
+  };
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({
+    type: AppRoutingModule
+  });
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule.forRoot(routes), _angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule]
+  });
+}
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppRoutingModule, {
+    imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule],
+    exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__.RouterModule]
+  });
+})();
+
+/***/ }),
+
+/***/ 66401:
+/*!**********************************!*\
+  !*** ./src/app/app.component.ts ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AppComponent: () => (/* binding */ AppComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 61699);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ 27947);
+
+
+class AppComponent {
+  constructor() {
+    this.title = 'the_f2e_opening_ballot_boxes';
+  }
+  static #_ = this.ɵfac = function AppComponent_Factory(t) {
+    return new (t || AppComponent)();
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+    type: AppComponent,
+    selectors: [["app-root"]],
+    decls: 1,
+    vars: 0,
+    template: function AppComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](0, "router-outlet");
+      }
+    },
+    dependencies: [_angular_router__WEBPACK_IMPORTED_MODULE_1__.RouterOutlet],
+    styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ }),
+
+/***/ 78629:
+/*!*******************************!*\
+  !*** ./src/app/app.module.ts ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   AppModule: () => (/* binding */ AppModule)
+/* harmony export */ });
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/platform-browser */ 36480);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common/http */ 54860);
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 23966);
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 66401);
+/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./map/map.component */ 83398);
+/* harmony import */ var _main_main_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./main/main.component */ 26542);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/core */ 61699);
+
+
+
+
+
+
+
+class AppModule {
+  static #_ = this.ɵfac = function AppModule_Factory(t) {
+    return new (t || AppModule)();
+  };
+  static #_2 = this.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineNgModule"]({
+    type: AppModule,
+    bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent]
+  });
+  static #_3 = this.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵdefineInjector"]({
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule]
+  });
+}
+(function () {
+  (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_4__["ɵɵsetNgModuleScope"](AppModule, {
+    declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _map_map_component__WEBPACK_IMPORTED_MODULE_2__.MapComponent, _main_main_component__WEBPACK_IMPORTED_MODULE_3__.MainComponent],
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_5__.BrowserModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_common_http__WEBPACK_IMPORTED_MODULE_6__.HttpClientModule]
+  });
+})();
+
+/***/ }),
+
+/***/ 26542:
+/*!****************************************!*\
+  !*** ./src/app/main/main.component.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MainComponent: () => (/* binding */ MainComponent)
+/* harmony export */ });
+/* harmony import */ var echarts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! echarts */ 15806);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 61699);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 26575);
+/* harmony import */ var _map_map_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../map/map.component */ 83398);
+
+
+
+
+function MainComponent_option_6_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "option");
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
+  }
+  if (rf & 2) {
+    const city_r2 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate"](city_r2);
+  }
+}
+const _c0 = function (a0) {
+  return {
+    "-mt-5": a0
+  };
+};
+const _c1 = function (a0) {
+  return {
+    "triangle opacity-100": a0
+  };
+};
+const _c2 = function (a0, a1) {
+  return {
+    " text-[30px] -mt-4": a0,
+    "text-noFocus": a1
+  };
+};
+function MainComponent_ng_container_9_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r5 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerStart"](0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](1, "li", 9);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵlistener"]("click", function MainComponent_ng_container_9_Template_li_click_1_listener() {
+      const restoredCtx = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵrestoreView"](_r5);
+      const item_r3 = restoredCtx.$implicit;
+      const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵresetView"](ctx_r4.changeYear(item_r3));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](2, "span", 10);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](3, "p", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()();
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementContainerEnd"]();
+  }
+  if (rf & 2) {
+    const item_r3 = ctx.$implicit;
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](4, _c0, item_r3.selected));
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction1"](6, _c1, item_r3.selected));
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵpureFunction2"](8, _c2, item_r3.selected, !item_r3.selected));
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtextInterpolate1"](" ", item_r3.date, " ");
+  }
+}
+class MainComponent {
+  constructor() {
+    this.taiwanCities = ['臺北市', '新北市', '基隆市', '新竹市', '桃園市', '新竹縣', '宜蘭縣', '臺中市', '苗栗縣', '彰化縣', '南投縣', '雲林縣', '高雄市', '臺南市', '嘉義市', '嘉義縣', '屏東縣', '澎湖縣', '花蓮縣', '臺東縣'];
+    this.electionData = [{
+      date: '1996',
+      session: '9',
+      selected: false,
+      candidate: []
+    }, {
+      date: '2000',
+      session: '10',
+      selected: false,
+      candidate: []
+    }, {
+      date: '2004',
+      session: '11',
+      selected: false,
+      candidate: []
+    }, {
+      date: '2008',
+      session: '12',
+      selected: false,
+      candidate: []
+    }, {
+      date: '2012',
+      session: '13',
+      selected: false,
+      candidate: []
+    }, {
+      date: '2016',
+      selected: true,
+      session: '14',
+      candidate: [{
+        president: '蔡英文',
+        vicePresident: '陳建仁',
+        vote: 6894744,
+        party: 'DPP',
+        partyName: '民主進步黨',
+        point: '56.12%'
+      }, {
+        president: '朱立倫',
+        vicePresident: '王如玄',
+        vote: 3813365,
+        party: 'KMT',
+        partyName: '中國國民黨',
+        point: '31.04%'
+      }, {
+        president: '宋楚瑜',
+        vicePresident: '徐欣瑩',
+        vote: 1576861,
+        party: 'PFP',
+        partyName: '親民黨',
+        point: '12.84%'
+      }]
+    }, {
+      date: '2020',
+      selected: false,
+      session: '15',
+      candidate: [{
+        president: '蔡英文',
+        vicePresident: '賴清德',
+        vote: 8170231,
+        party: 'DPP',
+        partyName: '民主進步黨',
+        point: '57.13%'
+      }, {
+        president: '韓國瑜',
+        vicePresident: '張善政',
+        vote: 5522119,
+        party: 'KMT',
+        partyName: '中國國民黨',
+        point: '38.61%'
+      }, {
+        president: '宋楚瑜',
+        vicePresident: '余湘',
+        vote: 608590,
+        party: 'PFP',
+        partyName: '親民黨',
+        point: '04.26%'
+      }]
+    }];
+    this.session = '';
+    this.voteYear = '';
+    this.totalVotes = 0;
+    this.pointArr = [];
+  }
+  ngOnInit() {
+    this.drawPieChart();
+    this.electionData.forEach(data => {
+      if (data.selected) {
+        this.session = data.session;
+        this.voteYear = data.date;
+        this.candidate = data.candidate;
+        this.candidate.forEach(candidate => {
+          this.totalVotes += candidate.vote;
+          const point = Math.round(parseFloat(candidate.point));
+          const party = candidate.party;
+          for (let step = 0; step < point; step++) {
+            this.pointArr.push(party);
+          }
+        });
+      }
+    });
+  }
+  changeYear(item) {
+    this.pointArr = [];
+    this.electionData.forEach(data => {
+      data.selected = false;
+    });
+    console.log(item);
+    this.session = item.session;
+    this.voteYear = item.date;
+    this.candidate = item.candidate;
+    item.selected = !item.selected;
+    item.candidate.forEach(x => {
+      const point = Math.round(parseFloat(x.point));
+      const party = x.party;
+      for (let step = 0; step < point; step++) {
+        this.pointArr.push(party);
+      }
+    });
+  }
+  // 新增一個方法來繪製圓餅圖
+  drawPieChart() {
+    const chartElement = document.getElementById('pie-chart');
+    const myChart = echarts__WEBPACK_IMPORTED_MODULE_0__.init(chartElement);
+    const option = {
+      title: {
+        text: '選舉結果圓餅圖',
+        subtext: '總票數: ' + this.totalVotes,
+        left: 'center'
+      },
+      tooltip: {
+        trigger: 'item',
+        formatter: '{a} <br/>{b} : {c} ({d}%)'
+      },
+      legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: this.pointArr
+      },
+      series: [{
+        name: '得票率',
+        type: 'pie',
+        radius: '55%',
+        center: ['50%', '60%'],
+        data: this.pointArr.map(party => ({
+          name: party,
+          value: this.pointArr.filter(p => p === party).length
+        })),
+        emphasis: {
+          itemStyle: {
+            shadowBlur: 10,
+            shadowOffsetX: 0,
+            shadowColor: 'rgba(0, 0, 0, 0.5)'
+          }
+        }
+      }]
+    };
+    myChart.setOption(option);
+  }
+  static #_ = this.ɵfac = function MainComponent_Factory(t) {
+    return new (t || MainComponent)();
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+    type: MainComponent,
+    selectors: [["app-main"]],
+    decls: 13,
+    vars: 2,
+    consts: [[1, "w-[100%]", "h-[100%]", "my-0", "mx-auto", "justify-start", "-z-50"], [1, "flex"], [1, "home", "w-[32px]", "h-[32px]", "my-5"], [1, "search", "w-[32px]", "h-[32px]", "my-5"], [1, "w-[365px]", "h-[35px]", "border-radius-5px", "my-5"], [4, "ngFor", "ngForOf"], [1, "w-[700px]", "absolute", "z-50"], [1, "chart-container"], ["id", "pie-chart", 1, "chart"], [1, "mr-[15px]", "flex", "flex-col", "items-center", "cursor-pointer", 3, "ngClass", "click"], [1, "opacity-0", 3, "ngClass"], [3, "ngClass"]],
+    template: function MainComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](0, "main", 0)(1, "div")(2, "div", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](3, "div", 2)(4, "div", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](5, "select", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](6, MainComponent_option_6_Template, 2, 1, "option", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()();
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](7, "div", 1)(8, "div");
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtemplate"](9, MainComponent_ng_container_9_Template, 5, 11, "ng-container", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](10, "app-map", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](11, "div", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](12, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]()()()();
+      }
+      if (rf & 2) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.taiwanCities);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵadvance"](3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵproperty"]("ngForOf", ctx.electionData);
+      }
+    },
+    dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf, _map_map_component__WEBPACK_IMPORTED_MODULE_1__.MapComponent],
+    styles: ["@charset \"UTF-8\";\n.triangle[_ngcontent-%COMP%] {\n  border-right: 12px solid transparent;\n  border-left: 12px solid transparent;\n  border-top: 28px solid transparent;\n  display: inline-block;\n}\n\n.home[_ngcontent-%COMP%] {\n  background: url('home.png');\n  margin-left: 10px;\n}\n\n.search[_ngcontent-%COMP%] {\n  background: url('search.png');\n  margin-left: 10px;\n}\n\nselect[_ngcontent-%COMP%] {\n  margin-left: 20px;\n}\n\noption[_ngcontent-%COMP%] {\n  color: black;\n}\n\n.chart-container[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 400px; \n\n}\n\n.chart[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 100%;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbWFpbi9tYWluLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGdCQUFnQjtBQUFoQjtFQUNFLG9DQUFBO0VBQ0EsbUNBQUE7RUFDQSxrQ0FBQTtFQUNBLHFCQUFBO0FBRUY7O0FBQ0E7RUFDRSwyQkFBQTtFQUNBLGlCQUFBO0FBRUY7O0FBQ0E7RUFDRSw2QkFBQTtFQUNBLGlCQUFBO0FBRUY7O0FBQ0E7RUFDRSxpQkFBQTtBQUVGOztBQUNBO0VBQ0UsWUFBQTtBQUVGOztBQUNBO0VBQ0UsV0FBQTtFQUNBLGFBQUEsRUFBQSxjQUFBO0FBRUY7O0FBQ0E7RUFDRSxXQUFBO0VBQ0EsWUFBQTtBQUVGIiwic291cmNlc0NvbnRlbnQiOlsiLnRyaWFuZ2xlIHtcclxuICBib3JkZXItcmlnaHQ6IDEycHggc29saWQgdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyLWxlZnQ6IDEycHggc29saWQgdHJhbnNwYXJlbnQ7XHJcbiAgYm9yZGVyLXRvcDogMjhweCBzb2xpZCB0cmFuc3BhcmVudDtcclxuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XHJcbn1cclxuXHJcbi5ob21lIHtcclxuICBiYWNrZ3JvdW5kOiB1cmwoJy4uLy4uL2Fzc2V0cy9pbWcvaG9tZS5wbmcnKSA7XHJcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XHJcbn1cclxuXHJcbi5zZWFyY2gge1xyXG4gIGJhY2tncm91bmQ6IHVybCgnLi4vLi4vYXNzZXRzL2ltZy9zZWFyY2gucG5nJyk7XHJcbiAgbWFyZ2luLWxlZnQ6IDEwcHg7XHJcbn1cclxuXHJcbnNlbGVjdCB7XHJcbiAgbWFyZ2luLWxlZnQ6IDIwcHg7XHJcbn1cclxuXHJcbm9wdGlvbntcclxuICBjb2xvcjogYmxhY2s7XHJcbn1cclxuXHJcbi5jaGFydC1jb250YWluZXIge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogNDAwcHg7IC8qIMOowqjCrcOlwq7CmsOkwrjCgMOlwoDCi8OlwpDCiMOpwoHCqcOnwprChMOpwqvCmMOlwrrCpiAqL1xyXG59XHJcblxyXG4uY2hhcnQge1xyXG4gIHdpZHRoOiAxMDAlO1xyXG4gIGhlaWdodDogMTAwJTtcclxufVxyXG4iXSwic291cmNlUm9vdCI6IiJ9 */"]
+  });
+}
+
+/***/ }),
+
+/***/ 83398:
+/*!**************************************!*\
+  !*** ./src/app/map/map.component.ts ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MapComponent: () => (/* binding */ MapComponent)
+/* harmony export */ });
+/* harmony import */ var echarts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! echarts */ 15806);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 61699);
+/* harmony import */ var _service_map_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../service/map.service */ 62257);
+
+
+
+class MapComponent {
+  constructor(mapService) {
+    this.mapService = mapService;
+  }
+  ngOnInit() {
+    const DPP = '#02CC53';
+    const KMT = '#137FE3';
+    const PFP = '#FF9636';
+    this.chartDom = document.getElementById('map');
+    this.myChart = echarts__WEBPACK_IMPORTED_MODULE_0__.init(this.chartDom);
+    this.myChart.on('click', params => {
+      if (params.componentType === 'series') {
+        const clickedRegion = params.name;
+        console.log(`Clicked on region: ${clickedRegion}`);
+        // 獲取點擊位置的經緯度
+        const clickedCoords = params.event.target.getData().getCoord(params.dataIndex);
+        this.zoomIn(clickedCoords);
+      }
+    });
+    this.mapService.getMapData().subscribe(json => {
+      console.log(json);
+      echarts__WEBPACK_IMPORTED_MODULE_0__.registerMap('TW', json, {
+        '金門縣': {
+          left: 119.5,
+          top: 24.5,
+          width: 0.3
+        },
+        '連江縣': {
+          left: 119.5,
+          top: 25,
+          width: 0.2
+        }
+      });
+      this.option = {
+        tooltip: false,
+        series: [{
+          aspectScale: 0.9,
+          name: '台灣',
+          type: 'map',
+          roam: false,
+          map: 'TW',
+          emphasis: {
+            label: {
+              show: false
+            }
+          },
+          layoutCenter: ['45%', '55%'],
+          layoutSize: 600,
+          itemStyle: {
+            normal: {
+              borderColor: 'white',
+              borderWidth: 2,
+              color: "#fff"
+            },
+            emphasis: {}
+          },
+          select: {
+            label: {
+              show: false
+            }
+          },
+          data: [{
+            name: '連江縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '宜蘭縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '彰化縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '南投縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '雲林縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '基隆市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '臺北市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '新北市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '臺中市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '臺南市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '桃園市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '苗栗縣',
+            value: 'KMT',
+            itemStyle: {
+              normal: {
+                areaColor: KMT
+              }
+            }
+          }, {
+            name: '嘉義市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '嘉義縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '金門縣',
+            value: 'KMT',
+            itemStyle: {
+              normal: {
+                areaColor: KMT
+              }
+            }
+          }, {
+            name: '高雄市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '臺東縣',
+            value: 'KMT',
+            itemStyle: {
+              normal: {
+                areaColor: KMT
+              }
+            }
+          }, {
+            name: '花蓮縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '澎湖縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '新竹市',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }, {
+            name: '新竹縣',
+            value: 'KMT',
+            itemStyle: {
+              normal: {
+                areaColor: KMT
+              }
+            }
+          }, {
+            name: '屏東縣',
+            value: 'DPP',
+            itemStyle: {
+              normal: {
+                areaColor: DPP
+              }
+            }
+          }]
+        }]
+      };
+      this.myChart.setOption(this.option, true);
+      this.myChart.on('click', args => {
+        const path = args.name;
+        console.log(args);
+      });
+    });
+  }
+  ngAfterViewInit() {
+    this.option && this.myChart.setOption(this.option, true);
+  }
+  zoomIn(coords) {
+    // coords 是點擊位置的經緯度
+    const newOption = {
+      series: [{
+        center: this.myChart.convertToPixel('geo', coords),
+        zoom: 5,
+        itemStyle: {
+          emphasis: {
+            borderWidth: 5,
+            borderColor: 'rgba(255, 255, 255, 0.5)',
+            shadowBlur: 20,
+            shadowColor: 'rgba(255, 255, 255, 0.5)'
+          }
+        }
+      }]
+    };
+    this.myChart.setOption(newOption);
+  }
+  static #_ = this.ɵfac = function MapComponent_Factory(t) {
+    return new (t || MapComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_service_map_service__WEBPACK_IMPORTED_MODULE_1__.MapService));
+  };
+  static #_2 = this.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+    type: MapComponent,
+    selectors: [["app-map"]],
+    decls: 1,
+    vars: 0,
+    consts: [["id", "map", 1, "w-[700px]", "h-[900px]"]],
+    template: function MapComponent_Template(rf, ctx) {
+      if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](0, "div", 0);
+      }
+    },
+    styles: ["/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */"]
+  });
+}
+
+/***/ }),
+
+/***/ 62257:
+/*!****************************************!*\
+  !*** ./src/app/service/map.service.ts ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MapService: () => (/* binding */ MapService)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 61699);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ 54860);
+
+
+class MapService {
+  constructor(_http) {
+    this._http = _http;
+  }
+  getMapData() {
+    const jsonUrl = 'assets/tw.json';
+    return this._http.get(jsonUrl);
+  }
+  static #_ = this.ɵfac = function MapService_Factory(t) {
+    return new (t || MapService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient));
+  };
+  static #_2 = this.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({
+    token: MapService,
+    factory: MapService.ɵfac,
+    providedIn: 'root'
+  });
+}
+
+/***/ }),
+
+/***/ 14913:
+/*!*********************!*\
+  !*** ./src/main.ts ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ 36480);
+/* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app/app.module */ 78629);
+
+
+_angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__.platformBrowser().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_0__.AppModule).catch(err => console.error(err));
+
+/***/ })
+
+},
+/******/ __webpack_require__ => { // webpackRuntimeModules
+/******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+/******/ __webpack_require__.O(0, ["vendor"], () => (__webpack_exec__(79548), __webpack_exec__(14913)));
+/******/ var __webpack_exports__ = __webpack_require__.O();
+/******/ }
+]);
+//# sourceMappingURL=main.js.map
